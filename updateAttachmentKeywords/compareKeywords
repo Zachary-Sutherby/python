@@ -1,0 +1,16 @@
+# This script checks if an image keyword exists in the image file name.
+import os
+
+directory = r'C:\temp\'
+keyword = "image1"
+
+fldr = os.listdir(directory)
+
+for object in fldr:
+    attach = directory + '\\' + object
+    OID = object
+    attachment = os.listdir(attach)
+    if any(keyword in s for s in attachment):
+        print("Yes, " + keyword + " is in " + attachment[0])
+    else:
+        print("No, " + keyword + " is not in " + attachment[0])

@@ -1,0 +1,17 @@
+{
+    "icon": "file-excel",
+    "type": "script",
+    "category": "survey",
+    "fileTypes": [
+        "xlsx"
+    ],
+    "title": "XLSForm template updater",
+    "tooltip": "Updates your XLSForm using the latest template",
+    "arguments": [
+        "${surveyPath}\\${surveyName}.xlsx"
+    ],
+    "requirements": [
+        "openpyxl",
+		"arcgis"
+    ]
+}
